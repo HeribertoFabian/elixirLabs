@@ -1,0 +1,34 @@
+# Archivos y carpetas generadas por Elixir y Mix
+/_build/
+*/_build/        # Ignorar _build en todas las subcarpetas
+/deps/
+*/deps/          # Ignorar deps en todas las subcarpetas
+/mix.lock
+
+# Configuración de herramientas de Elixir
+*.beam           # Archivos compilados de Erlang/Elixir
+*.ez             # Archivos de dependencias empaquetadas
+.elixir_ls/      # Archivos generados por ElixirLS (VSCode)
+*/.elixir_ls/    # Ignorar .elixir_ls en todas las subcarpetas
+
+# Archivos de pruebas y cobertura
+cover/
+*/cover/         # Ignorar cover en todas las subcarpetas
+
+# Configuración del editor y sistema operativo
+.DS_Store        # macOS
+Thumbs.db        # Windows
+.idea/           # JetBrains (IntelliJ, RubyMine, etc.)
+.vscode/         # Configuración de VSCode
+*.swp            # Archivos temporales de Vim
+
+# Docker (si usas contenedores)
+docker-compose.override.yml
+.env
+*.log
+logs/
+*/logs/
+
+# Archivos de Phoenix (si es un proyecto Phoenix)
+priv/static/
+*/priv/static/   # Ignorar priv/static en todas las subcarpetas
